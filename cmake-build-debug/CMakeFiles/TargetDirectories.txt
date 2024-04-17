@@ -1,0 +1,5 @@
+D:/github_lib/Qt/sample_1_1/cmake-build-debug/CMakeFiles/sample_1_1.dir
+D:/github_lib/Qt/sample_1_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/github_lib/Qt/sample_1_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/github_lib/Qt/sample_1_1/cmake-build-debug/CMakeFiles/sample_1_1_autogen_timestamp_deps.dir
+D:/github_lib/Qt/sample_1_1/cmake-build-debug/CMakeFiles/sample_1_1_autogen.dir
