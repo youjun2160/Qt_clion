@@ -20,6 +20,10 @@ public:
 
     ~MainWindow() override;
 
+
+private slots:
+    void openImage();
+
 private:
     Ui::MainWindow *ui;
 };
