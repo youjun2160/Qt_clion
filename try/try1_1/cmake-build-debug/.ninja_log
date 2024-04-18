@@ -1,0 +1,26 @@
+# ninja log v5
+6	843	7351380765683977	D:/github_lib/Qt/sample_1_1/try/try1_1/cmake-build-debug/try1_1_autogen/timestamp	9332d1e60d03fe04
+6	843	7351380765683977	try1_1_autogen/timestamp	9332d1e60d03fe04
+6	843	7351380765683977	try1_1_autogen/mocs_compilation.cpp	9332d1e60d03fe04
+6	843	7351380765683977	D:/github_lib/Qt/sample_1_1/try/try1_1/cmake-build-debug/try1_1_autogen/mocs_compilation.cpp	9332d1e60d03fe04
+2952	3470	7351367094824066	try1_1.exe	d3bdc4fe2faba918
+857	3135	7351380789623093	CMakeFiles/try1_1.dir/try1_1_autogen/mocs_compilation.cpp.obj	590930ac48708b3a
+296	2210	7351342635657468	CMakeFiles/try1_1.dir/main.cpp.obj	8990dc410effaf96
+4	507	7351466954023971	build.ninja	a85bf76ca247be28
+870	3189	7351380790169535	CMakeFiles/try1_1.dir/Sources/mainwindow.cpp.obj	cd0a3fa12a8f2bbb
+844	3109	7351380789365475	CMakeFiles/try1_1.dir/Sources/main.cpp.obj	6f6c61c371417cda
+884	3169	7351380789974444	CMakeFiles/try1_1.dir/Sources/setdialog.cpp.obj	b573a5fff56a6e57
+9	844	7351474588664981	try1_1_autogen/timestamp	9332d1e60d03fe04
+9	844	7351474588664981	try1_1_autogen/mocs_compilation.cpp	9332d1e60d03fe04
+9	844	7351474588664981	D:/github_lib/Qt/sample_1_1/try/try1_1/cmake-build-debug/try1_1_autogen/timestamp	9332d1e60d03fe04
+9	844	7351474588664981	D:/github_lib/Qt/sample_1_1/try/try1_1/cmake-build-debug/try1_1_autogen/mocs_compilation.cpp	9332d1e60d03fe04
+870	2993	7351474611228902	CMakeFiles/try1_1.dir/Sources/setdialog.cpp.obj	b573a5fff56a6e57
+844	2994	7351474611228902	CMakeFiles/try1_1.dir/try1_1_autogen/mocs_compilation.cpp.obj	590930ac48708b3a
+857	3024	7351474611539782	CMakeFiles/try1_1.dir/Sources/mainwindow.cpp.obj	cd0a3fa12a8f2bbb
+3024	3575	7351474613702772	try1_1.exe	916e8efd27a30a3e
+6	270	7351482927327744	try1_1_autogen/timestamp	9332d1e60d03fe04
+6	270	7351482927327744	try1_1_autogen/mocs_compilation.cpp	9332d1e60d03fe04
+6	270	7351482927327744	D:/github_lib/Qt/sample_1_1/try/try1_1/cmake-build-debug/try1_1_autogen/timestamp	9332d1e60d03fe04
+6	270	7351482927327744	D:/github_lib/Qt/sample_1_1/try/try1_1/cmake-build-debug/try1_1_autogen/mocs_compilation.cpp	9332d1e60d03fe04
+291	2253	7351482947138854	CMakeFiles/try1_1.dir/Sources/setdialog.cpp.obj	b573a5fff56a6e57
+2253	2793	7351482949250556	try1_1.exe	916e8efd27a30a3e
