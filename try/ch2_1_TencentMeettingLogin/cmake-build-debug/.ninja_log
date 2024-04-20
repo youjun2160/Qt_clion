@@ -1,0 +1,10 @@
+# ninja log v5
+4	525	7353046183215919	build.ninja	1aa4b5bb44adc31d
+6	240	7353022836271599	D:/github_lib/Qt/sample_1_1/try/ch2_1_TencentMeettingLogin/cmake-build-debug/ch2_1_TencentMeettingLogin_autogen/mocs_compilation.cpp	b36ca314dd1d63b
+6	240	7353022836271599	ch2_1_TencentMeettingLogin_autogen/timestamp	b36ca314dd1d63b
+836	2898	7353004618982497	CMakeFiles/ch2_1_TencentMeettingLogin.dir/ch2_1_TencentMeettingLogin_autogen/mocs_compilation.cpp.obj	14e2c24c7274cb0e
+257	2234	7353022856206122	CMakeFiles/ch2_1_TencentMeettingLogin.dir/Sources/loginwindow.cpp.obj	3e976a1d8db73ad1
+6	240	7353022836271599	ch2_1_TencentMeettingLogin_autogen/mocs_compilation.cpp	b36ca314dd1d63b
+6	240	7353022836271599	D:/github_lib/Qt/sample_1_1/try/ch2_1_TencentMeettingLogin/cmake-build-debug/ch2_1_TencentMeettingLogin_autogen/timestamp	b36ca314dd1d63b
+863	2945	7353004619467970	CMakeFiles/ch2_1_TencentMeettingLogin.dir/Sources/main.cpp.obj	9859a6ddafd8ead4
+2234	2758	7353022858084268	ch2_1_TencentMeettingLogin.exe	b5165b373604ad8f
