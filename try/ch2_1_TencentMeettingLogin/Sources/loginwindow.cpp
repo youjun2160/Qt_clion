@@ -14,6 +14,12 @@ LoginWindow::LoginWindow(QWidget *parent) :
     ui->setupUi(this);
 
     this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint);
+
+    ui->label_logo->clear();
+    QPixmap *pixmap = new QPixmap("../Resource/images/qq.png");
+    *pixmap = pixmap->scaled(ui->label_logo->size(), Qt::KeepAspectRatio);
+    ui->label_logo->setScaledContents(true);
+    ui->label_logo->setPixmap(*pixmap);
 }
 
 LoginWindow::~LoginWindow() {

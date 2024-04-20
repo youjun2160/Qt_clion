@@ -27,28 +27,28 @@ class Ui_LoginWindow
 public:
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
+    QPushButton *btnSet;
     QLabel *label;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *btnMin;
+    QPushButton *btnClose;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer;
-    QLabel *label_2;
+    QLabel *label_logo;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer_3;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
+    QPushButton *btnWechat_login;
+    QPushButton *btnJoin;
     QSpacerItem *horizontalSpacer_4;
     QHBoxLayout *horizontalLayout_2;
     QFrame *line;
     QLabel *label_3;
     QFrame *line_2;
     QHBoxLayout *horizontalLayout_3;
-    QToolButton *toolButton;
-    QToolButton *toolButton_2;
-    QToolButton *toolButton_3;
+    QToolButton *toolBtnPhoneNumber;
+    QToolButton *toolBtnEnpriseWechat;
+    QToolButton *toolBtnSSO;
 
     void setupUi(QDialog *LoginWindow)
     {
@@ -59,12 +59,12 @@ public:
         verticalLayout_2->setObjectName("verticalLayout_2");
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        pushButton = new QPushButton(LoginWindow);
-        pushButton->setObjectName("pushButton");
-        pushButton->setMinimumSize(QSize(32, 32));
-        pushButton->setMaximumSize(QSize(32, 32));
+        btnSet = new QPushButton(LoginWindow);
+        btnSet->setObjectName("btnSet");
+        btnSet->setMinimumSize(QSize(32, 32));
+        btnSet->setMaximumSize(QSize(32, 32));
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(btnSet);
 
         label = new QLabel(LoginWindow);
         label->setObjectName("label");
@@ -72,19 +72,19 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        pushButton_2 = new QPushButton(LoginWindow);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setMinimumSize(QSize(32, 32));
-        pushButton_2->setMaximumSize(QSize(32, 32));
+        btnMin = new QPushButton(LoginWindow);
+        btnMin->setObjectName("btnMin");
+        btnMin->setMinimumSize(QSize(32, 32));
+        btnMin->setMaximumSize(QSize(32, 32));
 
-        horizontalLayout->addWidget(pushButton_2);
+        horizontalLayout->addWidget(btnMin);
 
-        pushButton_3 = new QPushButton(LoginWindow);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setMinimumSize(QSize(32, 32));
-        pushButton_3->setMaximumSize(QSize(32, 32));
+        btnClose = new QPushButton(LoginWindow);
+        btnClose->setObjectName("btnClose");
+        btnClose->setMinimumSize(QSize(32, 32));
+        btnClose->setMaximumSize(QSize(32, 32));
 
-        horizontalLayout->addWidget(pushButton_3);
+        horizontalLayout->addWidget(btnClose);
 
 
         verticalLayout_2->addLayout(horizontalLayout);
@@ -95,12 +95,12 @@ public:
 
         horizontalLayout_4->addItem(horizontalSpacer);
 
-        label_2 = new QLabel(LoginWindow);
-        label_2->setObjectName("label_2");
-        label_2->setMinimumSize(QSize(400, 336));
-        label_2->setMaximumSize(QSize(400, 336));
+        label_logo = new QLabel(LoginWindow);
+        label_logo->setObjectName("label_logo");
+        label_logo->setMinimumSize(QSize(400, 336));
+        label_logo->setMaximumSize(QSize(400, 336));
 
-        horizontalLayout_4->addWidget(label_2);
+        horizontalLayout_4->addWidget(label_logo);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -117,19 +117,19 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        pushButton_4 = new QPushButton(LoginWindow);
-        pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setMinimumSize(QSize(400, 50));
-        pushButton_4->setMaximumSize(QSize(400, 50));
+        btnWechat_login = new QPushButton(LoginWindow);
+        btnWechat_login->setObjectName("btnWechat_login");
+        btnWechat_login->setMinimumSize(QSize(400, 50));
+        btnWechat_login->setMaximumSize(QSize(400, 50));
 
-        verticalLayout->addWidget(pushButton_4);
+        verticalLayout->addWidget(btnWechat_login);
 
-        pushButton_5 = new QPushButton(LoginWindow);
-        pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setMinimumSize(QSize(400, 50));
-        pushButton_5->setMaximumSize(QSize(400, 50));
+        btnJoin = new QPushButton(LoginWindow);
+        btnJoin->setObjectName("btnJoin");
+        btnJoin->setMinimumSize(QSize(400, 50));
+        btnJoin->setMaximumSize(QSize(400, 50));
 
-        verticalLayout->addWidget(pushButton_5);
+        verticalLayout->addWidget(btnJoin);
 
 
         horizontalLayout_5->addLayout(verticalLayout);
@@ -168,26 +168,26 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        toolButton = new QToolButton(LoginWindow);
-        toolButton->setObjectName("toolButton");
-        toolButton->setMinimumSize(QSize(60, 80));
-        toolButton->setMaximumSize(QSize(60, 80));
+        toolBtnPhoneNumber = new QToolButton(LoginWindow);
+        toolBtnPhoneNumber->setObjectName("toolBtnPhoneNumber");
+        toolBtnPhoneNumber->setMinimumSize(QSize(60, 80));
+        toolBtnPhoneNumber->setMaximumSize(QSize(60, 80));
 
-        horizontalLayout_3->addWidget(toolButton);
+        horizontalLayout_3->addWidget(toolBtnPhoneNumber);
 
-        toolButton_2 = new QToolButton(LoginWindow);
-        toolButton_2->setObjectName("toolButton_2");
-        toolButton_2->setMinimumSize(QSize(60, 80));
-        toolButton_2->setMaximumSize(QSize(60, 80));
+        toolBtnEnpriseWechat = new QToolButton(LoginWindow);
+        toolBtnEnpriseWechat->setObjectName("toolBtnEnpriseWechat");
+        toolBtnEnpriseWechat->setMinimumSize(QSize(60, 80));
+        toolBtnEnpriseWechat->setMaximumSize(QSize(60, 80));
 
-        horizontalLayout_3->addWidget(toolButton_2);
+        horizontalLayout_3->addWidget(toolBtnEnpriseWechat);
 
-        toolButton_3 = new QToolButton(LoginWindow);
-        toolButton_3->setObjectName("toolButton_3");
-        toolButton_3->setMinimumSize(QSize(60, 80));
-        toolButton_3->setMaximumSize(QSize(60, 80));
+        toolBtnSSO = new QToolButton(LoginWindow);
+        toolBtnSSO->setObjectName("toolBtnSSO");
+        toolBtnSSO->setMinimumSize(QSize(60, 80));
+        toolBtnSSO->setMaximumSize(QSize(60, 80));
 
-        horizontalLayout_3->addWidget(toolButton_3);
+        horizontalLayout_3->addWidget(toolBtnSSO);
 
 
         verticalLayout_2->addLayout(horizontalLayout_3);
@@ -201,17 +201,17 @@ public:
     void retranslateUi(QDialog *LoginWindow)
     {
         LoginWindow->setWindowTitle(QCoreApplication::translate("LoginWindow", "LoginWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
+        btnSet->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
         label->setText(QCoreApplication::translate("LoginWindow", "\350\247\206\351\242\221\344\274\232\350\256\256", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
-        label_2->setText(QCoreApplication::translate("LoginWindow", "TextLabel", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("LoginWindow", "\345\212\240\345\205\245\344\274\232\350\256\256", nullptr));
+        btnMin->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
+        btnClose->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
+        label_logo->setText(QCoreApplication::translate("LoginWindow", "TextLabel", nullptr));
+        btnWechat_login->setText(QCoreApplication::translate("LoginWindow", "PushButton", nullptr));
+        btnJoin->setText(QCoreApplication::translate("LoginWindow", "\345\212\240\345\205\245\344\274\232\350\256\256", nullptr));
         label_3->setText(QCoreApplication::translate("LoginWindow", "\345\205\266\344\273\226\347\231\273\351\231\206\346\226\271\345\274\217", nullptr));
-        toolButton->setText(QCoreApplication::translate("LoginWindow", "...", nullptr));
-        toolButton_2->setText(QCoreApplication::translate("LoginWindow", "...", nullptr));
-        toolButton_3->setText(QCoreApplication::translate("LoginWindow", "...", nullptr));
+        toolBtnPhoneNumber->setText(QCoreApplication::translate("LoginWindow", "...", nullptr));
+        toolBtnEnpriseWechat->setText(QCoreApplication::translate("LoginWindow", "...", nullptr));
+        toolBtnSSO->setText(QCoreApplication::translate("LoginWindow", "...", nullptr));
     } // retranslateUi
 
 };

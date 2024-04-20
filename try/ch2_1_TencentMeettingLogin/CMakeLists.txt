@@ -14,6 +14,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
+set(RESOURCE_FILES Resource/loginwindow.qrc)
 
 include_directories(
         ${PROJECT_SOURCE_DIR}/Forms

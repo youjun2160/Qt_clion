@@ -17,7 +17,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnSet">
        <property name="minimumSize">
         <size>
          <width>32</width>
@@ -46,7 +46,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="btnMin">
        <property name="minimumSize">
         <size>
          <width>32</width>
@@ -65,7 +65,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="btnClose">
        <property name="minimumSize">
         <size>
          <width>32</width>
@@ -101,7 +101,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="label_logo">
        <property name="minimumSize">
         <size>
          <width>400</width>
@@ -152,7 +152,7 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="btnWechat_login">
          <property name="minimumSize">
           <size>
            <width>400</width>
@@ -171,7 +171,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="btnJoin">
          <property name="minimumSize">
           <size>
            <width>400</width>
@@ -237,7 +237,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QToolButton" name="toolButton">
+      <widget class="QToolButton" name="toolBtnPhoneNumber">
        <property name="minimumSize">
         <size>
          <width>60</width>
@@ -256,7 +256,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="toolButton_2">
+      <widget class="QToolButton" name="toolBtnEnpriseWechat">
        <property name="minimumSize">
         <size>
          <width>60</width>
@@ -275,7 +275,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="toolButton_3">
+      <widget class="QToolButton" name="toolBtnSSO">
        <property name="minimumSize">
         <size>
          <width>60</width>
