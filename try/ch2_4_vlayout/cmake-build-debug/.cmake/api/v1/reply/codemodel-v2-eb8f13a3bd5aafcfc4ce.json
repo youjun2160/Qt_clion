@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ch2_4_vlayout",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ch2_4_vlayout::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch2_4_vlayout-Debug-1f85be838f98eb5a0833.json",
+					"name" : "ch2_4_vlayout",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch2_4_vlayout_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch2_4_vlayout_autogen-Debug-9719e09398cb23b05976.json",
+					"name" : "ch2_4_vlayout_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch2_4_vlayout_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch2_4_vlayout_autogen_timestamp_deps-Debug-6be1a7d21c5c7550e5c2.json",
+					"name" : "ch2_4_vlayout_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug",
+		"source" : "D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

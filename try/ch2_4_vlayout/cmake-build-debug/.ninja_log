@@ -1,0 +1,10 @@
+# ninja log v5
+4	556	7355567431595234	build.ninja	29514a4c11a24760
+6	255	7353223783642226	D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/ch2_4_vlayout_autogen/timestamp	1685481bfccf7a84
+863	2872	7353221710189865	CMakeFiles/ch2_4_vlayout.dir/Sources/widget.cpp.obj	2fed752c8a941077
+2200	2730	7353223804984374	ch2_4_vlayout.exe	f4dc22b133bdf799
+6	255	7353223783642226	ch2_4_vlayout_autogen/timestamp	1685481bfccf7a84
+6	255	7353223783642226	ch2_4_vlayout_autogen/mocs_compilation.cpp	1685481bfccf7a84
+6	255	7353223783642226	D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/ch2_4_vlayout_autogen/mocs_compilation.cpp	1685481bfccf7a84
+274	2199	7353223803082462	CMakeFiles/ch2_4_vlayout.dir/Sources/main.cpp.obj	9805c766311c9073
+876	2888	7353221710289231	CMakeFiles/ch2_4_vlayout.dir/ch2_4_vlayout_autogen/mocs_compilation.cpp.obj	eb1d8f3a51cd5406

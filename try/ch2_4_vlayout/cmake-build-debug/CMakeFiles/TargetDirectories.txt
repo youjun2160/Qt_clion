@@ -1,0 +1,5 @@
+D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/CMakeFiles/ch2_4_vlayout.dir
+D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/CMakeFiles/ch2_4_vlayout_autogen_timestamp_deps.dir
+D:/github_lib/Qt/sample_1_1/try/ch2_4_vlayout/cmake-build-debug/CMakeFiles/ch2_4_vlayout_autogen.dir
