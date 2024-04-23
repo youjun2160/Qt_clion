@@ -1,0 +1,5 @@
+"C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\github_lib\Qt\sample_1_1\try\new1_2_slot -B D:\github_lib\Qt\sample_1_1\try\new1_2_slot\cmake-build-debug
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/github_lib/Qt/sample_1_1/try/new1_2_slot/cmake-build-debug

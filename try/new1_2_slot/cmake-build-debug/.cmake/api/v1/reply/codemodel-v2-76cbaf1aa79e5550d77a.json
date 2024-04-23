@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "new1_2_slot",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_2_slot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_2_slot-Debug-6b3afc173d9b802fa615.json",
+					"name" : "new1_2_slot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_2_slot_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_2_slot_autogen-Debug-588e474beab1adb441d2.json",
+					"name" : "new1_2_slot_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_2_slot_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_2_slot_autogen_timestamp_deps-Debug-82bc2012ce736bcafe88.json",
+					"name" : "new1_2_slot_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/github_lib/Qt/sample_1_1/try/new1_2_slot/cmake-build-debug",
+		"source" : "D:/github_lib/Qt/sample_1_1/try/new1_2_slot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
