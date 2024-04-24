@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "new1_3_custom_signal",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_3_custom_signal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_3_custom_signal-Debug-1f0cb4ecfae1b60423d2.json",
+					"name" : "new1_3_custom_signal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_3_custom_signal_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_3_custom_signal_autogen-Debug-05e710432ee8b5528d86.json",
+					"name" : "new1_3_custom_signal_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_3_custom_signal_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_3_custom_signal_autogen_timestamp_deps-Debug-09e0293b0ab20657bc7d.json",
+					"name" : "new1_3_custom_signal_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/cmake-build-debug",
+		"source" : "D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

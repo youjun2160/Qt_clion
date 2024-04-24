@@ -1,0 +1,11 @@
+# ninja log v5
+3	501	7356667658909210	build.ninja	a4510c2773bd69f8
+6	271	7356667073862085	D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/cmake-build-debug/new1_3_custom_signal_autogen/mocs_compilation.cpp	c35595d4f62dee37
+828	3043	7356510906881924	CMakeFiles/new1_3_custom_signal.dir/new1_3_custom_signal_autogen/mocs_compilation.cpp.obj	794f1183c331555d
+6	271	7356667073862085	new1_3_custom_signal_autogen/timestamp	c35595d4f62dee37
+841	3005	7356510906491828	CMakeFiles/new1_3_custom_signal.dir/Sources/main.cpp.obj	3bf92456070accfd
+6	271	7356667073862085	new1_3_custom_signal_autogen/mocs_compilation.cpp	c35595d4f62dee37
+6	271	7356667073862085	D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/cmake-build-debug/new1_3_custom_signal_autogen/timestamp	c35595d4f62dee37
+291	2655	7356667097700159	CMakeFiles/new1_3_custom_signal.dir/Sources/customsignal.cpp.obj	e687280d6e654442
+2656	3196	7356667099769185	new1_3_custom_signal.exe	f76dd03281703b44
+868	2975	7356510906186726	CMakeFiles/new1_3_custom_signal.dir/Sources/boss.cpp.obj	bb00ceac8920aa1b
