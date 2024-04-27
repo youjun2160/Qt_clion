@@ -399,8 +399,8 @@ D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/Headers/customsigna
  mdp:D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/Headers/customsignal.h
  mdp:D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/cmake-build-debug/new1_3_custom_signal_autogen/moc_predefs.h
 D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/customsignal.cpp
-D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/main.cpp
 D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/boss.cpp
+D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/main.cpp
 D:/github_lib/Qt/sample_1_1/try/new1_3_custom_signal/Sources/Headers/boss.h
  mmc:Q_OBJECT
  mdp:C:/Program Files/JetBrains/CLion 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
