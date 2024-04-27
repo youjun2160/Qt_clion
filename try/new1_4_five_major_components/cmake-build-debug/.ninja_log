@@ -1,0 +1,11 @@
+# ninja log v5
+4	521	7359052924657344	build.ninja	d08c21e5a9032d25
+7	262	7359026616803032	new1_4_five_major_components_autogen/timestamp	7f78b1210863b616
+271	2152	7358886952192253	CMakeFiles/new1_4_five_major_components.dir/Sources/main.cpp.obj	54f6042151bc8c55
+7	262	7359026616803032	new1_4_five_major_components_autogen/mocs_compilation.cpp	7f78b1210863b616
+7	262	7359026616803032	D:/github_lib/Qt/sample_1_1/try/new1_4_five_major_components/cmake-build-debug/new1_4_five_major_components_autogen/timestamp	7f78b1210863b616
+7	262	7359026616803032	D:/github_lib/Qt/sample_1_1/try/new1_4_five_major_components/cmake-build-debug/new1_4_five_major_components_autogen/mocs_compilation.cpp	7f78b1210863b616
+780	2930	7358886454525721	CMakeFiles/new1_4_five_major_components.dir/new1_4_five_major_components_autogen/mocs_compilation.cpp.obj	c0aa0530f335a1cd
+282	2239	7358889081317214	CMakeFiles/new1_4_five_major_components.dir/Sources/widget.cpp.obj	9c861bd70f00740f
+2312	2853	7359026639353248	new1_4_five_major_components.exe	71b1e1630bac2ab0
+282	2312	7359026637279504	CMakeFiles/new1_4_five_major_components.dir/Sources/mainwindow.cpp.obj	e93b726cd3048e6
