@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "newproject_1_calculator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "newproject_1_calculator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-newproject_1_calculator-Debug-5a757baa8107cbf8c6f3.json",
+					"name" : "newproject_1_calculator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "newproject_1_calculator_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-newproject_1_calculator_autogen-Debug-fe5700ddba388e621001.json",
+					"name" : "newproject_1_calculator_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "newproject_1_calculator_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-newproject_1_calculator_autogen_timestamp_deps-Debug-e2b596ef18f451048745.json",
+					"name" : "newproject_1_calculator_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug",
+		"source" : "D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

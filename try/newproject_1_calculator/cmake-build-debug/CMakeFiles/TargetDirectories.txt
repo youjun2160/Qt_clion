@@ -1,0 +1,5 @@
+D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug/CMakeFiles/newproject_1_calculator.dir
+D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug/CMakeFiles/newproject_1_calculator_autogen_timestamp_deps.dir
+D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug/CMakeFiles/newproject_1_calculator_autogen.dir
