@@ -44,4 +44,66 @@ MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::OnClicked(BtnType type, QString num) {}
+void MainWindow::OnClicked(BtnType type, QString num) {
+    switch (type) {
+        case Num:
+            if(OP.isEmpty()){
+                NUM1 += num;
+            } else {
+                NUM2 += num;
+            }
+            break;
+        case op:
+            OP = num;
+            break;
+        case point:
+            if(OP.isEmpty()){
+                if(!NUM1.contains(".") && !NUM1.isEmpty()){
+                    NUM1 += num;
+                }
+            } else {
+                if(!NUM2.contains(".") && !NUM2.isEmpty()){
+                    NUM2 += num;
+                }
+            }
+            break;
+        case ac:
+            NUM1.clear();
+            NUM2.clear();
+            OP.clear();
+            RESULT.clear();
+            break;
+        case deleate:
+            break;
+        case equal:
+            double num1 = NUM1.toDouble();
+            double num2 = NUM2.toDouble();
+            switch (OP.toInt()) {
+                case 0:
+                    RESULT = QString::number(num1 + num2);
+                    break;
+                case 1:
+                    RESULT = QString::number(num1 - num2);
+                    break;
+                case 2:
+                    RESULT = QString::number(num1 * num2);
+                    break;
+                case 3:
+                    //除数不能为0
+                    if(num2 == 0){
+                        RESULT = "除数不能为0";
+                        break;
+                    }
+                    RESULT = QString::number(num1 / num2);
+                    break;
+            }
+            break;
+    }
+
+    //更新显示
+    if(!RESULT.isEmpty()){
+        ui->label->setText(RESULT);
+    } else {
+        ui->label->setText(NUM1 + OP + NUM2);
+    }
+}

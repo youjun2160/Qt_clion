@@ -31,6 +31,7 @@ public:
     QString NUM1;
     QString NUM2;
     QString OP;
+    QString RESULT;
 
 public slots:
     void OnClicked(BtnType type, QString num);

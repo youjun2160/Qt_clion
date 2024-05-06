@@ -398,9 +398,9 @@ D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/mainwindow.h
  mdp:D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qwidget.h
  mdp:D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-debug/newproject_1_calculator_autogen/moc_predefs.h
  mdp:D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/mainwindow.h
-D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/main.cpp
 D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/mainwindow.cpp
  uic:Forms/ui_MainWindow.h
+D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/main.cpp
 D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/Sources/Headers/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/Program Files/JetBrains/CLion 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
