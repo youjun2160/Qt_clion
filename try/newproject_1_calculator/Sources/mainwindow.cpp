@@ -38,6 +38,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->btn_deleate, &QPushButton::clicked, [this](){ OnClicked(deleate, "deleate");});
     connect(ui->btn_point, &QPushButton::clicked, [this](){ OnClicked(point, ".");});
     connect(ui->btn_result, &QPushButton::clicked, [this](){ OnClicked(equal, "=");});
+
+    ui->btn_result->setStyleSheet("QPushButton:hover {background-color: rgb(67, 143, 192);}");
 }
 
 MainWindow::~MainWindow() {
@@ -54,6 +56,35 @@ void MainWindow::OnClicked(BtnType type, QString num) {
             }
             break;
         case op:
+            //如果此时已经运算出结果并且没有清空，那么就将结果作为第一个数字
+            if(!RESULT.isEmpty()){
+                NUM1 = RESULT;
+                NUM2.clear();
+                OP.clear();
+                RESULT.clear();
+            }//如果此时NUM1，NUM2和OP都已经被填入，那么再次输入符号，就直接进行运算，并将结果作为第一个数字
+            else if(!NUM1.isEmpty() && !NUM2.isEmpty() && !OP.isEmpty()){
+                double num1 = NUM1.toDouble();
+                double num2 = NUM2.toDouble();
+                if(OP == "+"){
+                    RESULT = QString::number(num1 + num2);
+                } else if(OP == "-"){
+                    RESULT = QString::number(num1 - num2);
+                } else if(OP == "*"){
+                    RESULT = QString::number(num1 * num2);
+                } else if(OP == "/"){
+                    if(num2 == 0){
+                        RESULT = "除数不能为0";
+                        break;
+                    }
+                    RESULT = QString::number(num1 / num2);
+                }
+                NUM1 = RESULT;
+                NUM2.clear();
+                RESULT.clear();
+            } else if(!OP.isEmpty()){
+                break;
+            }
             OP = num;
             break;
         case point:
@@ -74,28 +105,35 @@ void MainWindow::OnClicked(BtnType type, QString num) {
             RESULT.clear();
             break;
         case deleate:
+            if(!RESULT.isEmpty()){
+                RESULT.chop(1);
+            } else if(!OP.isEmpty() && !NUM1.isEmpty() && !NUM2.isEmpty()){
+                NUM2.chop(1);
+            } else if(!OP.isEmpty() && !NUM1.isEmpty()){
+                OP.chop(1);
+            } else if(!NUM1.isEmpty()){
+                NUM1.chop(1);
+            }
             break;
         case equal:
+            //当输入的算式不完整时，不进行运算
+            if(NUM1.isEmpty() || NUM2.isEmpty() || OP.isEmpty()){
+                break;
+            }
             double num1 = NUM1.toDouble();
             double num2 = NUM2.toDouble();
-            switch (OP.toInt()) {
-                case 0:
-                    RESULT = QString::number(num1 + num2);
+            if(OP == "+"){
+                RESULT = QString::number(num1 + num2);
+            } else if(OP == "-"){
+                RESULT = QString::number(num1 - num2);
+            } else if(OP == "*"){
+                RESULT = QString::number(num1 * num2);
+            } else if(OP == "/"){
+                if(num2 == 0){
+                    RESULT = "除数不能为0";
                     break;
-                case 1:
-                    RESULT = QString::number(num1 - num2);
-                    break;
-                case 2:
-                    RESULT = QString::number(num1 * num2);
-                    break;
-                case 3:
-                    //除数不能为0
-                    if(num2 == 0){
-                        RESULT = "除数不能为0";
-                        break;
-                    }
-                    RESULT = QString::number(num1 / num2);
-                    break;
+                }
+                RESULT = QString::number(num1 / num2);
             }
             break;
     }

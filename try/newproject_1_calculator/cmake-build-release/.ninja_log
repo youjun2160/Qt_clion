@@ -1,0 +1,9 @@
+# ninja log v5
+2	830	7367672352117481	newproject_1_calculator_autogen/timestamp	6f68da5ff8e822f8
+2	830	7367672352117481	newproject_1_calculator_autogen/mocs_compilation.cpp	6f68da5ff8e822f8
+2	830	7367672352117481	D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-release/newproject_1_calculator_autogen/timestamp	6f68da5ff8e822f8
+2	830	7367672352117481	D:/github_lib/Qt/sample_1_1/try/newproject_1_calculator/cmake-build-release/newproject_1_calculator_autogen/mocs_compilation.cpp	6f68da5ff8e822f8
+843	2582	7367672370751017	CMakeFiles/newproject_1_calculator.dir/Sources/main.cpp.obj	fba74dda3b4e11f1
+856	2626	7367672371191094	CMakeFiles/newproject_1_calculator.dir/newproject_1_calculator_autogen/mocs_compilation.cpp.obj	832e4eef98e94f09
+831	2878	7367672373719657	CMakeFiles/newproject_1_calculator.dir/Sources/mainwindow.cpp.obj	4eb55a678aaf946
+2879	3379	7367672375476924	newproject_1_calculator.exe	d65fbf02feec7c96

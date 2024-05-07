@@ -22,7 +22,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QGridLayout *gridLayout;
@@ -60,14 +60,14 @@ public:
         MainWindow->setMinimumSize(QSize(300, 425));
         MainWindow->setMaximumSize(QSize(300, 425));
         MainWindow->setBaseSize(QSize(400, 600));
-        widget = new QWidget(MainWindow);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(0, 0, 304, 435));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(MainWindow);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(0, 0, 304, 435));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(0);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
         label->setMinimumSize(QSize(300, 50));
         label->setMaximumSize(QSize(300, 50));
@@ -86,143 +86,166 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(0);
         gridLayout->setObjectName("gridLayout");
-        btn_add = new QPushButton(widget);
+        btn_add = new QPushButton(layoutWidget);
         btn_add->setObjectName("btn_add");
         btn_add->setMinimumSize(QSize(75, 75));
         btn_add->setMaximumSize(QSize(75, 75));
+        QFont font1;
+        font1.setPointSize(25);
+        btn_add->setFont(font1);
 
         gridLayout->addWidget(btn_add, 3, 3, 1, 1);
 
-        btn_point = new QPushButton(widget);
+        btn_point = new QPushButton(layoutWidget);
         btn_point->setObjectName("btn_point");
         btn_point->setMinimumSize(QSize(75, 75));
         btn_point->setMaximumSize(QSize(75, 75));
+        btn_point->setFont(font1);
 
         gridLayout->addWidget(btn_point, 4, 2, 1, 1);
 
-        btn_deleate = new QPushButton(widget);
+        btn_deleate = new QPushButton(layoutWidget);
         btn_deleate->setObjectName("btn_deleate");
         btn_deleate->setMinimumSize(QSize(75, 75));
         btn_deleate->setMaximumSize(QSize(75, 75));
+        btn_deleate->setFont(font1);
 
         gridLayout->addWidget(btn_deleate, 0, 1, 1, 1);
 
-        btn2 = new QPushButton(widget);
+        btn2 = new QPushButton(layoutWidget);
         btn2->setObjectName("btn2");
         btn2->setMinimumSize(QSize(75, 75));
         btn2->setMaximumSize(QSize(75, 75));
+        btn2->setFont(font1);
 
         gridLayout->addWidget(btn2, 1, 1, 1, 1);
 
-        btn7 = new QPushButton(widget);
+        btn7 = new QPushButton(layoutWidget);
         btn7->setObjectName("btn7");
         btn7->setMinimumSize(QSize(75, 75));
         btn7->setMaximumSize(QSize(75, 75));
+        btn7->setFont(font1);
 
         gridLayout->addWidget(btn7, 3, 0, 1, 1);
 
-        btn_divide = new QPushButton(widget);
+        btn_divide = new QPushButton(layoutWidget);
         btn_divide->setObjectName("btn_divide");
         btn_divide->setMinimumSize(QSize(75, 75));
         btn_divide->setMaximumSize(QSize(75, 75));
+        btn_divide->setFont(font1);
 
         gridLayout->addWidget(btn_divide, 0, 3, 1, 1);
 
-        btn9 = new QPushButton(widget);
+        btn9 = new QPushButton(layoutWidget);
         btn9->setObjectName("btn9");
         btn9->setMinimumSize(QSize(75, 75));
         btn9->setMaximumSize(QSize(75, 75));
+        btn9->setFont(font1);
 
         gridLayout->addWidget(btn9, 3, 2, 1, 1);
 
-        btn_multiply = new QPushButton(widget);
+        btn_multiply = new QPushButton(layoutWidget);
         btn_multiply->setObjectName("btn_multiply");
         btn_multiply->setMinimumSize(QSize(75, 75));
         btn_multiply->setMaximumSize(QSize(75, 75));
+        btn_multiply->setFont(font1);
 
         gridLayout->addWidget(btn_multiply, 1, 3, 1, 1);
 
-        btn_ac = new QPushButton(widget);
+        btn_ac = new QPushButton(layoutWidget);
         btn_ac->setObjectName("btn_ac");
         btn_ac->setMinimumSize(QSize(75, 75));
         btn_ac->setMaximumSize(QSize(75, 75));
+        btn_ac->setFont(font1);
 
         gridLayout->addWidget(btn_ac, 0, 2, 1, 1);
 
-        btn8 = new QPushButton(widget);
+        btn8 = new QPushButton(layoutWidget);
         btn8->setObjectName("btn8");
         btn8->setMinimumSize(QSize(75, 75));
         btn8->setMaximumSize(QSize(75, 75));
+        btn8->setFont(font1);
 
         gridLayout->addWidget(btn8, 3, 1, 1, 1);
 
-        btn1 = new QPushButton(widget);
+        btn1 = new QPushButton(layoutWidget);
         btn1->setObjectName("btn1");
         btn1->setMinimumSize(QSize(75, 75));
         btn1->setMaximumSize(QSize(75, 75));
+        btn1->setFont(font1);
 
         gridLayout->addWidget(btn1, 1, 0, 1, 1);
 
-        btn = new QPushButton(widget);
+        btn = new QPushButton(layoutWidget);
         btn->setObjectName("btn");
         btn->setMinimumSize(QSize(75, 75));
         btn->setMaximumSize(QSize(75, 75));
+        btn->setFont(font1);
 
         gridLayout->addWidget(btn, 0, 0, 1, 1);
 
-        btn_result = new QPushButton(widget);
+        btn_result = new QPushButton(layoutWidget);
         btn_result->setObjectName("btn_result");
         btn_result->setMinimumSize(QSize(75, 75));
         btn_result->setMaximumSize(QSize(75, 75));
+        btn_result->setFont(font1);
 
         gridLayout->addWidget(btn_result, 4, 3, 1, 1);
 
-        btn4 = new QPushButton(widget);
+        btn4 = new QPushButton(layoutWidget);
         btn4->setObjectName("btn4");
         btn4->setMinimumSize(QSize(75, 75));
         btn4->setMaximumSize(QSize(75, 75));
+        btn4->setFont(font1);
 
         gridLayout->addWidget(btn4, 2, 0, 1, 1);
 
-        btn3 = new QPushButton(widget);
+        btn3 = new QPushButton(layoutWidget);
         btn3->setObjectName("btn3");
         btn3->setMinimumSize(QSize(75, 75));
         btn3->setMaximumSize(QSize(75, 75));
+        btn3->setFont(font1);
 
         gridLayout->addWidget(btn3, 1, 2, 1, 1);
 
-        btn6 = new QPushButton(widget);
+        btn6 = new QPushButton(layoutWidget);
         btn6->setObjectName("btn6");
         btn6->setMinimumSize(QSize(75, 75));
         btn6->setMaximumSize(QSize(75, 75));
+        btn6->setFont(font1);
+        btn6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 170, 255);"));
 
         gridLayout->addWidget(btn6, 2, 2, 1, 1);
 
-        btn_unknown = new QPushButton(widget);
+        btn_unknown = new QPushButton(layoutWidget);
         btn_unknown->setObjectName("btn_unknown");
         btn_unknown->setMinimumSize(QSize(75, 75));
         btn_unknown->setMaximumSize(QSize(75, 75));
+        btn_unknown->setFont(font1);
 
         gridLayout->addWidget(btn_unknown, 4, 0, 1, 1);
 
-        btn_subtract = new QPushButton(widget);
+        btn_subtract = new QPushButton(layoutWidget);
         btn_subtract->setObjectName("btn_subtract");
         btn_subtract->setMinimumSize(QSize(75, 75));
         btn_subtract->setMaximumSize(QSize(75, 75));
+        btn_subtract->setFont(font1);
 
         gridLayout->addWidget(btn_subtract, 2, 3, 1, 1);
 
-        btn0 = new QPushButton(widget);
+        btn0 = new QPushButton(layoutWidget);
         btn0->setObjectName("btn0");
         btn0->setMinimumSize(QSize(75, 75));
         btn0->setMaximumSize(QSize(75, 75));
+        btn0->setFont(font1);
 
         gridLayout->addWidget(btn0, 4, 1, 1, 1);
 
-        btn5 = new QPushButton(widget);
+        btn5 = new QPushButton(layoutWidget);
         btn5->setObjectName("btn5");
         btn5->setMinimumSize(QSize(75, 75));
         btn5->setMaximumSize(QSize(75, 75));
+        btn5->setFont(font1);
 
         gridLayout->addWidget(btn5, 2, 1, 1, 1);
 

@@ -37,7 +37,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -103,6 +103,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>+</string>
         </property>
@@ -121,6 +126,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>.</string>
@@ -141,6 +151,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>&lt;-</string>
         </property>
@@ -159,6 +174,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>2</string>
@@ -179,6 +199,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>7</string>
         </property>
@@ -197,6 +222,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>/</string>
@@ -217,6 +247,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>9</string>
         </property>
@@ -235,6 +270,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>*</string>
@@ -255,6 +295,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>AC</string>
         </property>
@@ -273,6 +318,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>8</string>
@@ -293,6 +343,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>1</string>
         </property>
@@ -311,6 +366,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>%</string>
@@ -331,6 +391,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>=</string>
         </property>
@@ -349,6 +414,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>4</string>
@@ -369,6 +439,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>3</string>
         </property>
@@ -387,6 +462,14 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 255);</string>
         </property>
         <property name="text">
          <string>6</string>
@@ -407,6 +490,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>+/-</string>
         </property>
@@ -425,6 +513,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>-</string>
@@ -445,6 +538,11 @@
           <height>75</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>0</string>
         </property>
@@ -463,6 +561,11 @@
           <width>75</width>
           <height>75</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>5</string>
