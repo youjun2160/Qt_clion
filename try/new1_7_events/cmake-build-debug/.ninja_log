@@ -1,0 +1,24 @@
+# ninja log v5
+1096	4766	7368641202603656	CMakeFiles/new1_7_events.dir/new1_7_events_autogen/mocs_compilation.cpp.obj	347e03542a87891d
+348	2693	7368641579724958	CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj	58d551454d4ac09
+4	516	7368596952068557	build.ninja	7a60f99e8325983e
+1111	4809	7368641203038753	CMakeFiles/new1_7_events.dir/Sources/main.cpp.obj	33ec1f350d66ede9
+9	324	7368641556048694	new1_7_events_autogen/timestamp	255d609008daced2
+9	324	7368641556048694	new1_7_events_autogen/mocs_compilation.cpp	255d609008daced2
+9	324	7368641556048694	D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/mocs_compilation.cpp	255d609008daced2
+9	324	7368641556048694	D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/timestamp	255d609008daced2
+2693	3317	7368641581972738	new1_7_events.exe	e09ffc35297b9950
+9	953	7368642113775615	new1_7_events_autogen/timestamp	255d609008daced2
+9	953	7368642113775615	new1_7_events_autogen/mocs_compilation.cpp	255d609008daced2
+9	953	7368642113775615	D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/timestamp	255d609008daced2
+9	953	7368642113775615	D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/mocs_compilation.cpp	255d609008daced2
+954	4301	7368642148569545	CMakeFiles/new1_7_events.dir/new1_7_events_autogen/mocs_compilation.cpp.obj	347e03542a87891d
+969	4326	7368642148838770	CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj	58d551454d4ac09
+984	4332	7368642148910823	CMakeFiles/new1_7_events.dir/Sources/main.cpp.obj	33ec1f350d66ede9
+4333	4959	7368642151131210	new1_7_events.exe	e09ffc35297b9950
+8	332	7368642753727048	new1_7_events_autogen/timestamp	255d609008daced2
+8	332	7368642753727048	new1_7_events_autogen/mocs_compilation.cpp	255d609008daced2
+8	332	7368642753727048	D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/timestamp	255d609008daced2
+8	332	7368642753727048	D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/mocs_compilation.cpp	255d609008daced2
+356	2710	7368642777485128	CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj	58d551454d4ac09
+2710	3362	7368642779970829	new1_7_events.exe	e09ffc35297b9950

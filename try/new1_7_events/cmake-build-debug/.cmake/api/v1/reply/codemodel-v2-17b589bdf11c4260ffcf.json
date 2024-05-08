@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "new1_7_events",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_7_events::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_7_events-Debug-58ff4ecda216a1e5afc0.json",
+					"name" : "new1_7_events",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_7_events_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_7_events_autogen-Debug-2c7c794bb51d16d18fe6.json",
+					"name" : "new1_7_events_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new1_7_events_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new1_7_events_autogen_timestamp_deps-Debug-2ae1ae9b20430c3d390b.json",
+					"name" : "new1_7_events_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug",
+		"source" : "D:/github_lib/Qt/sample_1_1/try/new1_7_events"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
