@@ -1,4 +1,4 @@
-D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/HUL6J7LJEB/moc_mainwindow.cpp: D:/github_lib/Qt/sample_1_1/try/new1_7_events/Sources/Headers/mainwindow.h \
+D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/HUL6J7LJEB/moc_MyButton.cpp: D:/github_lib/Qt/sample_1_1/try/new1_7_events/Sources/Headers/MyButton.h \
   D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/moc_predefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
@@ -291,7 +291,6 @@ D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_au
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qglobalstatic.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qhash.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qhashfunctions.h \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qiodevice.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qiterable.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qiterator.h \
@@ -359,7 +358,6 @@ D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_au
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qtversionchecks.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qtypeinfo.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qtypes.h \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qurl.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qutf8stringview.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qvariant.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -379,25 +377,23 @@ D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_au
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qkeysequence.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qpaintdevice.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qpalette.h \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qpicture.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qpixelformat.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qpixmap.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qpolygon.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qregion.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qrgb.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qrgba64.h \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/QLabel \
+  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/QToolButton \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/QWidget \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qframe.h \
-  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qtoolbutton.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

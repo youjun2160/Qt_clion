@@ -21,7 +21,10 @@ include_directories(
 add_executable(new1_7_events Sources/main.cpp
         Sources/mainwindow.cpp
         Sources/Headers/mainwindow.h
-        Sources/Forms/mainwindow.ui)
+        Sources/Forms/mainwindow.ui
+        Sources/MyButton.cpp
+        Sources/Headers/MyButton.h
+)
 target_link_libraries(new1_7_events
         Qt::Core
         Qt::Gui

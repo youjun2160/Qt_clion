@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +23,7 @@ class Ui_MainWindow
 public:
     QLabel *label;
     QPushButton *pushButton;
+    QToolButton *toolButton;
 
     void setupUi(QWidget *MainWindow)
     {
@@ -34,6 +36,12 @@ public:
         pushButton = new QPushButton(MainWindow);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(100, 330, 75, 24));
+        toolButton = new QToolButton(MainWindow);
+        toolButton->setObjectName("toolButton");
+        toolButton->setGeometry(QRect(300, 410, 71, 80));
+        toolButton->setMinimumSize(QSize(71, 80));
+        toolButton->setMaximumSize(QSize(71, 80));
+        toolButton->setIconSize(QSize(71, 80));
 
         retranslateUi(MainWindow);
 
@@ -45,6 +53,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QString());
         pushButton->setText(QCoreApplication::translate("MainWindow", "\346\214\211\351\222\256", nullptr));
+        toolButton->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
     } // retranslateUi
 
 };

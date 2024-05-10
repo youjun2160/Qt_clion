@@ -1,4 +1,4 @@
-D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/HUL6J7LJEB/moc_mainwindow.cpp: D:/github_lib/Qt/sample_1_1/try/new1_7_events/Sources/Headers/mainwindow.h \
+D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/HUL6J7LJEB/moc_ImageLabel.cpp: D:/github_lib/Qt/sample_1_1/try/new1_7_events/Sources/Headers/ImageLabel.h \
   D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/moc_predefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
@@ -247,6 +247,7 @@ D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_au
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/QObject \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -366,6 +367,7 @@ D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_au
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/QPixmap \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qaction.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qbitmap.h \
   D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui/qbrush.h \

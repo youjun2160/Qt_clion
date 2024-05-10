@@ -73,6 +73,14 @@ build CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj: CXX_COMPILER__new
   OBJECT_DIR = CMakeFiles\new1_7_events.dir
   OBJECT_FILE_DIR = CMakeFiles\new1_7_events.dir\Sources
 
+build CMakeFiles/new1_7_events.dir/Sources/MyButton.cpp.obj: CXX_COMPILER__new1_7_events_unscanned_Debug D$:/github_lib/Qt/sample_1_1/try/new1_7_events/Sources/MyButton.cpp || cmake_object_order_depends_target_new1_7_events
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\new1_7_events.dir\Sources\MyButton.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -ID:/github_lib/Qt/sample_1_1/try/new1_7_events/Forms -ID:/github_lib/Qt/sample_1_1/try/new1_7_events/Sources/Headers -isystem D:/github_lib/Qt/sample_1_1/try/new1_7_events/cmake-build-debug/new1_7_events_autogen/include -isystem D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtCore -isystem D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include -isystem D:/Qt/Qt_6_7_0/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtGui -isystem D:/Qt/Qt_6_7_0/6.7.0/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\new1_7_events.dir
+  OBJECT_FILE_DIR = CMakeFiles\new1_7_events.dir\Sources
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target new1_7_events
@@ -81,7 +89,7 @@ build CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj: CXX_COMPILER__new
 #############################################
 # Link the executable new1_7_events.exe
 
-build new1_7_events.exe: CXX_EXECUTABLE_LINKER__new1_7_events_Debug CMakeFiles/new1_7_events.dir/new1_7_events_autogen/mocs_compilation.cpp.obj CMakeFiles/new1_7_events.dir/Sources/main.cpp.obj CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj | D$:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Gui.a D$:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Core.a || new1_7_events_autogen new1_7_events_autogen_timestamp_deps
+build new1_7_events.exe: CXX_EXECUTABLE_LINKER__new1_7_events_Debug CMakeFiles/new1_7_events.dir/new1_7_events_autogen/mocs_compilation.cpp.obj CMakeFiles/new1_7_events.dir/Sources/main.cpp.obj CMakeFiles/new1_7_events.dir/Sources/mainwindow.cpp.obj CMakeFiles/new1_7_events.dir/Sources/MyButton.cpp.obj | D$:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Gui.a D$:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Core.a || new1_7_events_autogen new1_7_events_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = D:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Widgets.a  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Gui.a  D:/Qt/Qt_6_7_0/6.7.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\new1_7_events.dir

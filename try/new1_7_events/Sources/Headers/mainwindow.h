@@ -6,6 +6,7 @@
 #define NEW1_7_EVENTS_MAINWINDOW_H
 
 #include <QWidget>
+#include <QLabel>
 
 
 QT_BEGIN_NAMESPACE
@@ -25,6 +26,17 @@ private:
 
 public slots:
     void test();
+
+public:
+
+    virtual void enterEvent(QEvent *event);
+
+    virtual void leaveEvent(QEvent *event);
+
+    virtual void keyPressEvent(QKeyEvent *event) override;
+
+
+
 };
 
 
