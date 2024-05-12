@@ -1,0 +1,18 @@
+# ninja log v5
+7	268	7371014743542857	D:/github_lib/Qt/sample_1_1/try/new1_8_timer/cmake-build-debug/new1_8_timer_autogen/timestamp	bde38e5fd8ac307
+7	268	7371014743542857	new1_8_timer_autogen/mocs_compilation.cpp	bde38e5fd8ac307
+3	504	7371101191369732	build.ninja	dc80f4a7aa77988
+7	268	7371014743542857	new1_8_timer_autogen/timestamp	bde38e5fd8ac307
+809	2852	7371009037194299	CMakeFiles/new1_8_timer.dir/Sources/main.cpp.obj	1107aa4c6d781295
+7	268	7371014743542857	D:/github_lib/Qt/sample_1_1/try/new1_8_timer/cmake-build-debug/new1_8_timer_autogen/mocs_compilation.cpp	bde38e5fd8ac307
+855	2952	7371013957937269	CMakeFiles/new1_8_timer.dir/new1_8_timer_autogen/mocs_compilation.cpp.obj	da3bc33d76ed1188
+868	3006	7371013958481789	CMakeFiles/new1_8_timer.dir/Sources/mainwindow.cpp.obj	af7595b34a679517
+2235	2756	7371014765172846	new1_8_timer.exe	25afcf1d7cb960a1
+945	2982	7371007270331206	CMakeFiles/new1_8_timer.dir/MyButton.cpp.obj	4d335bbb0b1decae
+287	2234	7371014763196879	CMakeFiles/new1_8_timer.dir/Sources/MyButton.cpp.obj	27cbd09c65372759
+7	318	7371106250072589	new1_8_timer_autogen/timestamp	bde38e5fd8ac307
+7	318	7371106250072589	new1_8_timer_autogen/mocs_compilation.cpp	bde38e5fd8ac307
+7	318	7371106250072589	D:/github_lib/Qt/sample_1_1/try/new1_8_timer/cmake-build-debug/new1_8_timer_autogen/timestamp	bde38e5fd8ac307
+7	318	7371106250072589	D:/github_lib/Qt/sample_1_1/try/new1_8_timer/cmake-build-debug/new1_8_timer_autogen/mocs_compilation.cpp	bde38e5fd8ac307
+338	2961	7371106276505878	CMakeFiles/new1_8_timer.dir/Sources/mainwindow.cpp.obj	af7595b34a679517
+2962	3550	7371106278719739	new1_8_timer.exe	25afcf1d7cb960a1
