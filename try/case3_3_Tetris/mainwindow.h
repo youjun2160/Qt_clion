@@ -12,6 +12,9 @@
 #include <QDebug>
 #include <QTime>
 #include <QMessageBox>
+#include <iostream>
+#include <chrono>
+#include <random>
 
 enum MoveType
 {
@@ -68,7 +71,7 @@ private:
     //方块生成种子
     int seed = 0;
     //方块下坠速度
-    int speed_ms = 500;
+    int speed_ms = 150;
     //加速下坠速度
     int speed_ms_up = 150;
     //刷新速度
@@ -84,6 +87,7 @@ private:
     int speed_up_paint_timer;
 
     bool isGamePause = false;
+    bool isStart = false;
 
     QLCDNumber *lcd = nullptr;
 
@@ -142,35 +146,35 @@ private:
     //右L
     int item2[4][4] =
         {
-            {0, 1, 0, 0},
-            {0, 1, 0, 0},
-            {0, 1, 1, 0},
+            {0, 0, 0, 0},
+            {0, 0, 1, 0},
+            {1, 1, 1, 0},
             {0, 0, 0, 0}
         };
 
     //左L
     int item3[4][4] =
         {
+            {0, 0, 0, 0},
+            {1, 1, 1, 0},
             {0, 0, 1, 0},
-            {0, 0, 1, 0},
-            {0, 1, 1, 0},
             {0, 0, 0, 0}
         };
 
     //右S
     int item4[4][4]=
         {
-            {0,1,0,0},
+            {0,0,0,0},
             {0,1,1,0},
-            {0,0,1,0},
+            {1,1,0,0},
             {0,0,0,0}
         };
     //左S
     int item5[4][4]=
         {
-            {0,0,1,0},
+            {0,0,0,0},
+            {1,1,0,0},
             {0,1,1,0},
-            {0,1,0,0},
             {0,0,0,0}
         };
     //山形
@@ -178,16 +182,16 @@ private:
         {
             {0,0,0,0},
             {0,0,1,0},
-            {0,1,1,1},
-            {0,0,0,0}
+            {0,1,1,0},
+            {0,0,1,0}
         };
     //长条
     int item7[4][4]=
         {
-            {0,0,1,0},
-            {0,0,1,0},
-            {0,0,1,0},
-            {0,0,1,0}
+            {0,0,0,0},
+            {0,0,0,0},
+            {1,1,1,1},
+            {0,0,0,0}
         };
 };
 #endif // MAINWINDOW_H

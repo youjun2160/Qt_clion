@@ -30,13 +30,13 @@ MainWindow::MainWindow(QWidget *parent)
 
     //测试按钮2
     QPushButton *button2 = new QPushButton(this);
-    button2->setText("测试按钮2");
+    button2->setText("暂停/开始");
     button2->move(margin + (boardWidth - 4) * cellSize + 40, margin + 4 * cellSize + 280);
     connect(button2, &QPushButton::clicked, this, &MainWindow::gamePause);
 
     //测试按钮3
     QPushButton *button3 = new QPushButton(this);
-    button3->setText("测试按钮3");
+    button3->setText("重置");
     button3->move(margin + (boardWidth - 4) * cellSize + 40, margin + 4 * cellSize + 330);
     connect(button3, &QPushButton::clicked, this, &MainWindow::initGame);
 
@@ -89,8 +89,8 @@ void MainWindow::paintEvent(QPaintEvent *event){
                 color = nextBlock.color;
             }
             //计算坐标
-            int x = margin + (boardWidth - 4) * cellSize + 40 + j * cellSize;
-            int y = margin + i * cellSize;
+            int x = margin + (boardWidth - 4) * cellSize + 40 + i * cellSize;
+            int y = margin + j * cellSize;
             //根据游戏盘绘制无边框实心方块
             // 使用画刷填充一个矩形区域
             painter.fillRect(QRect(x, y, cellSize, cellSize), QBrush(color));
@@ -113,7 +113,14 @@ void MainWindow::initGame(){
         }
     }
 
+    if(!isGamePause){
+        isGamePause = true;
+        killTimer(game_timer);
+        killTimer(paint_timer);
+    }
+
     gameBlock.isExit = false;
+    isStart = false;
     update();
 
 }
@@ -130,9 +137,18 @@ void MainWindow::copyBlock(int src[4][4], int des[4][4]){
 //创建新方块到下一个方块
 void MainWindow::createBlock(int seed, Block &wBlock){
     //根据时间设置种子
-    srand(time(0));
-    seed = rand();
+    // 使用高精度时钟获取当前时间
+    auto now = std::chrono::high_resolution_clock::now();
 
+    // 转换时间为微秒
+    auto microseconds = std::chrono::duration_cast<std::chrono::microseconds>(now.time_since_epoch()).count();
+
+    // 使用微秒时间戳作为种子
+    std::mt19937 generator(microseconds);
+
+    // 生成随机数
+    std::uniform_int_distribution<int> distribution(1, 100);
+    seed = distribution(generator);
     //方块复制
     switch (seed % 7) {
     case 0:
@@ -167,9 +183,135 @@ void MainWindow::createBlock(int seed, Block &wBlock){
 
 }
 
+
+
+//放置方块进游戏
+void MainWindow::resetBlock(){
+    for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 4; j++){
+            board[i + 6][j] = nextBlock.block[i][j];
+        }
+    }
+    //设置方块坐标
+    gameBlock.x = 6;
+    gameBlock.y = 0;
+
+    gameBlock.color = nextBlock.color;
+}
+
+
+//计时器
+void MainWindow::timerEvent(QTimerEvent *event){
+    if(event->timerId() == game_timer){
+        if(checkLand()){
+            moveDown();
+        } else{
+            for(int i = gameBlock.x; i < gameBlock.x + 4; i++){
+                for(int j = gameBlock.y; j < gameBlock.y + 4; j++){
+                    if(board[i][j] == 1){
+                        board[i][j] = 2;
+                    }
+                }
+            }
+            //判断是否加分
+            addScore();
+            //判断是否游戏失败
+            gameOver();
+            startGame();
+        }
+    }
+
+    if(event->timerId() == paint_timer){
+        update();
+    }
+}
+
+//开始游戏
+void MainWindow::startGame(){
+
+    if(isGamePause){
+        isGamePause = false;
+        game_timer = startTimer(speed_ms);
+        paint_timer = startTimer(speed_ms);
+    } else{
+        isGamePause = false;
+        game_timer = startTimer(speed_ms);
+        paint_timer = startTimer(speed_ms);
+
+        if(nextBlock.isExit == false){
+            createBlock(seed, nextBlock);
+        }
+
+
+        copyBlock(nextBlock.block, gameBlock.block);
+        resetBlock();
+        createBlock(seed, nextBlock);
+    }
+
+
+
+
+    // if(isGamePause){
+    //     isGamePause = false;
+    //     game_timer = startTimer(speed_ms);
+    //     paint_timer = startTimer(speed_ms);
+    // } else{
+    //     if(isStart){
+    //         if(nextBlock.isExit == false){
+    //             createBlock(seed, nextBlock);
+    //         }
+
+    //         copyBlock(nextBlock.block, gameBlock.block);
+    //         resetBlock();
+    //         createBlock(seed, nextBlock);
+    //     } else {
+    //         game_timer = startTimer(speed_ms);
+    //         paint_timer = startTimer(speed_ms);
+    //         isStart = true;
+    //     }
+
+    // }
+
+}
+
+//得分
+void MainWindow::addScore(){
+    for(int j = boardHeight - 3; j > 3; j--){
+        for(int i = 2; i < boardWidth - 2; i++){
+            if(board[i][j] != 2){
+                break;
+            }
+
+            if(i == boardWidth - 3){
+
+                score += 10;
+
+                lcd->display(score);
+
+                for(int k = 2; k < boardWidth - 2; k++){
+                    board[k][j] = 0;
+                }
+                moveDownAfterClear(j - 1);
+                j++;
+            }
+        }
+    }
+}
+
+//消除方块后下落
+void MainWindow::moveDownAfterClear(int layer){
+    for(int i = layer; i > 3; i--){
+        for(int j = 2; j < boardWidth - 2; j++){
+            if(board[j][i] == 2){
+                board[j][i] = 0;
+                board[j][i + 1] = 2;
+            }
+        }
+    }
+}
+
 //方块下落
 void MainWindow::moveDown(){
-    qDebug() << "1";
     for(int i = gameBlock.x; i < gameBlock.x + 4; i++){
         for(int j = gameBlock.y + 4; j >= gameBlock.y; j--){
             if(board[i][j] == 1){
@@ -179,18 +321,6 @@ void MainWindow::moveDown(){
         }
     }
     gameBlock.y++;
-}
-
-//放置方块进游戏
-void MainWindow::resetBlock(){
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            board[i + 6][j] = gameBlock.block[j][i];
-        }
-    }
-    //设置方块坐标
-    gameBlock.x = 6;
-    gameBlock.y = 0;
 }
 
 //检测左右移动是否被阻挡
@@ -341,92 +471,14 @@ void MainWindow::gameOver(){
     for(int i = 0; i <= 4; i++){
         for(int j = 2; j < boardWidth - 2; j++){
             if(board[j][i] == 2){
-                QMessageBox::information(this, "提示", "游戏结束");
-                gamePause();
-            }
-        }
-    }
-}
-
-//计时器
-void MainWindow::timerEvent(QTimerEvent *event){
-    if(event->timerId() == game_timer){
-        if(checkLand()){
-            moveDown();
-        } else{
-            for(int i = gameBlock.x; i < gameBlock.x + 4; i++){
-                for(int j = gameBlock.y; j < gameBlock.y + 4; j++){
-                    if(board[i][j] == 1){
-                        board[i][j] = 2;
-                    }
+                if(!isGamePause){
+                    QMessageBox::information(this, "提示", "游戏结束");
+                    killTimer(game_timer);
+                    killTimer(paint_timer);
+                    isGamePause = true;
                 }
             }
-            qDebug() << "2";
-            //判断是否加分
-            addScore();
-            //判断是否游戏失败
-            gameOver();
-            startGame();
-        }
-    }
-
-    if(event->timerId() == paint_timer){
-        update();
-    }
-}
-
-//开始游戏
-void MainWindow::startGame(){
-    game_timer = startTimer(speed_ms);
-    paint_timer = startTimer(speed_ms);
-
-    if(gameBlock.isExit == false){
-        createBlock(seed, gameBlock);
-    } else{
-        copyBlock(nextBlock.block, gameBlock.block);
-    }
-
-
-    createBlock(seed, nextBlock);
-    resetBlock();
-
-
-
-    isGamePause = false;
-}
-
-//得分
-void MainWindow::addScore(){
-    for(int j = boardHeight - 3; j > 3; j--){
-        for(int i = 2; i < boardWidth - 2; i++){
-            if(board[i][j] != 2){
-                break;
-            }
-
-            if(i == boardWidth - 3){
-
-                score += 10;
-
-                lcd->display(score);
-
-                for(int k = 2; k < boardWidth - 2; k++){
-                    board[k][j] = 0;
-                }
-                j--;
-                moveDownAfterClear(j);
-            }
         }
     }
 }
 
-//消除方块后下落
-void MainWindow::moveDownAfterClear(int layer){
-    for(int i = layer; i > 3; i--){
-        for(int j = 2; j < boardWidth - 2; j++){
-            if(board[j][i] == 2){
-                board[j][i] = 0;
-                board[j][i + 1] = 2;
-            }
-        }
-    }
-}
