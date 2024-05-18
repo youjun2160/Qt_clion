@@ -10,6 +10,8 @@
 #include <QMessageBox>
 #include <QKeyEvent>
 #include <QDebug>
+#include <QTime>
+#include <QMessageBox>
 
 enum MoveType
 {
@@ -26,6 +28,7 @@ typedef struct Block
     QColor color;
     int x;
     int y;
+    bool isExit = false;
 } Block;
 
 QT_BEGIN_NAMESPACE
@@ -61,12 +64,7 @@ private:
     //游戏盘
     int board[16][26] = {0};
     //下一个方块
-    int nextBlock[4][4] = {
-        {0, 0, 0, 0},
-        {0, 0, 0, 0},
-        {0, 0, 0, 0},
-        {0, 0, 0, 0}
-    };
+    struct Block nextBlock;
     //方块生成种子
     int seed = 0;
     //方块下坠速度
@@ -78,12 +76,16 @@ private:
     //方块下坠计时器
     QTimer *timer = nullptr;
     //游戏盘中运动的方块
-    struct Block gameBlock = {};
+    struct Block gameBlock;
 
     int game_timer;
     int paint_timer;
     int speed_up_game_timer;
     int speed_up_paint_timer;
+
+    bool isGamePause = false;
+
+    QLCDNumber *lcd = nullptr;
 
 
 public:
@@ -122,6 +124,10 @@ public:
     virtual void timerEvent(QTimerEvent *event) override;
     //开始游戏
     void startGame();
+    //得分
+    void addScore();
+    //消除方块后下落
+    void moveDownAfterClear(int layer);
 
 private:
     //田字
