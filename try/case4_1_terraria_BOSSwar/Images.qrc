@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pictures/ArmsDealer_Default.png</file>
+        <file>pictures/0mhy6cl0l2sgc2lflrxibr3j9gvxbi3.png</file>
+        <file>pictures/arrow.png</file>
+        <file>pictures/background.png</file>
+        <file>pictures/Battlefield.png</file>
+        <file>pictures/bubbles.png</file>
+        <file>pictures/Daedalus_Storm_Bow.png</file>
+        <file>pictures/fire.png</file>
+        <file>pictures/gloden_rain.png</file>
+        <file>pictures/heartlight.png</file>
+        <file>pictures/pig_fish_dragon.png</file>
+        <file>pictures/pigshark.png</file>
+        <file>pictures/potion.png</file>
+        <file>pictures/shield.png</file>
+        <file>pictures/songlu.png</file>
+        <file>pictures/startgame.png</file>
+        <file>pictures/wings.png</file>
+    </qresource>
+</RCC>
