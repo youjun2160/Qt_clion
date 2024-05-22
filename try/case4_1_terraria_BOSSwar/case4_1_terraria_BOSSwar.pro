@@ -12,11 +12,13 @@ SOURCES += \
     boss.cpp \
     main.cpp \
     mainwindow.cpp \
+    map.cpp \
     player.cpp
 
 HEADERS += \
     boss.h \
     mainwindow.h \
+    map.h \
     player.h
 
 FORMS += \

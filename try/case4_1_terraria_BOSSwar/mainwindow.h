@@ -6,7 +6,13 @@
 #include <QPainter>
 #include <QDebug>
 #include "player.h"
+#include "map.h"
 #include <QGraphicsView>
+#include <QTimer>
+#include <QApplication>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsRectItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -34,14 +40,21 @@ private:
     //游戏状态：1，游戏开始界面   2，游戏进行中   3，游戏结束
     int gameState = 1;
     //地图大小
-    QSize mapSize;
+    Map gameMap;
     //创建角色
-    player user;
+    player player;
+    //游戏主计时器
+    int gameTimer = 0;
+    //
 
 protected:
     //当窗口大小调整时，重新设置窗口
     void resizeEvent(QResizeEvent *event) override;
     //当玩家移动时，根据玩家位置来更新摄像机
     void updateCamera(QGraphicsView *view);
+    //开始游戏
+    void startGame();
+    //计时器
+    void timerEvent(QTimerEvent *event) override;
 };
 #endif // MAINWINDOW_H
