@@ -13,6 +13,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QGraphicsRectItem>
+#include <QPixmap>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -45,7 +46,13 @@ private:
     player player;
     //游戏主计时器
     int gameTimer = 0;
-    //
+    //创建摄像机
+    QGraphicsView *camera;
+    //创建场景
+    QGraphicsScene *Tscene;
+    //创建角色
+    QGraphicsPixmapItem *playerItem;
+
 
 protected:
     //当窗口大小调整时，重新设置窗口
@@ -56,5 +63,11 @@ protected:
     void startGame();
     //计时器
     void timerEvent(QTimerEvent *event) override;
+    //角色键盘响应
+    void keyPressEvent(QKeyEvent *event) override;
+    //角色键盘松开
+    void keyReleaseEvent(QKeyEvent *event) override;
+    //更新角色样子
+    void updateSkin();
 };
 #endif // MAINWINDOW_H
