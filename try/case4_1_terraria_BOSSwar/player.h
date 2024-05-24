@@ -35,6 +35,8 @@ public:
     qreal friction = 0;
     //动力
     qreal power = 0;
+    //重力
+    qreal gravity = 0.2;
 
 
 public:

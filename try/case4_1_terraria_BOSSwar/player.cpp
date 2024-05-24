@@ -59,7 +59,7 @@ void player::slowDown(QKeyEvent *event)
 //自由下落
 void player::fall()
 {
-    dy += 1;
+    dy += gravity;
 }
 
 //落到地面

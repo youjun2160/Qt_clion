@@ -77,27 +77,6 @@ void MainWindow::resizeEvent(QResizeEvent *event) {
     button->setGeometry(width() / 2 - 150, height() / 2 - 50, 300, 100);
 }
 
-/*
-//当玩家移动时，根据玩家位置来更新摄像机
-void MainWindow::updateCamera(QGraphicsView *view) {
-    //计算摄像机的新中心点
-    QPointF viewCenter = player.pos;
-
-    // 限制视口不超出地图边界
-    qreal halfWidth = view->viewport()->width() / 2.0;
-    qreal halfHeight = view->viewport()->height() / 2.0;
-    qreal leftBound = halfWidth;
-    qreal rightBound = gameMap.size.width() - halfWidth;
-    qreal topBound = halfHeight;
-    qreal bottomBound = gameMap.size.height() - halfHeight;
-
-    viewCenter.setX(qMax(leftBound, qMin(viewCenter.x(), rightBound)));
-    viewCenter.setY(qMax(topBound, qMin(viewCenter.y(), bottomBound)));
-
-    // 设置视口的新中心点
-    view->centerOn(viewCenter);
-}
- */
 
 //开始游戏，进行初始化
 void MainWindow::startGame() {
@@ -130,9 +109,9 @@ void MainWindow::startGame() {
     QGraphicsItem *blockItem = Tscene->addRect(0, 672 * 2, 3840, 316);
 
     //添加平台
-    QGraphicsItem *platformItem = Tscene->addRect(0, 206 * 2, 3840, 1, QPen(Qt::NoPen), QBrush(Qt::black));
-    QGraphicsItem *platformItem2 = Tscene->addRect(0, 386 * 2, 3840, 1, QPen(Qt::NoPen), QBrush(Qt::black));
-    QGraphicsItem *platformItem3 = Tscene->addRect(0, 534 * 2, 3840, 1, QPen(Qt::NoPen), QBrush(Qt::black));
+    platformItem = Tscene->addRect(0, 206 * 2, 3840, 1, QPen(Qt::NoPen), QBrush(Qt::black));
+    platformItem2 = Tscene->addRect(0, 386 * 2, 3840, 1, QPen(Qt::NoPen), QBrush(Qt::black));
+    platformItem3 = Tscene->addRect(0, 534 * 2, 3840, 1, QPen(Qt::NoPen), QBrush(Qt::black));
 
     
 
@@ -177,6 +156,8 @@ void MainWindow::timerEvent(QTimerEvent *event) {
         camera->centerOn(playerItem);
         //更新角色样子
         updateSkin();
+        //角色下落
+        fall();
 
     }
 }
@@ -188,33 +169,41 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
         //角色动力
         player.power = -0.2;
         //角色状态样子
-        player.skin = 1;
+        if(isStandingOnPlatform(playerItem, platformItem) || isStandingOnPlatform(playerItem, platformItem2) || isStandingOnPlatform(playerItem, platformItem3)){
+            player.skin = 1;
+        } else{
+            player.skin = 5;
+        }
     } else if(event->key() == Qt::Key_D){
         //角色动力
         player.power = 0.2;
         //角色状态样子
-        player.skin = 2;
+        if(isStandingOnPlatform(playerItem, platformItem) || isStandingOnPlatform(playerItem, platformItem2) || isStandingOnPlatform(playerItem, platformItem3)){
+            player.skin = 2;
+        } else{
+            player.skin = 6;
+        }
     } else if(event->key() == Qt::Key_S){
         //如果脚下状态是平台,那么角色穿过平台，开始自由下落
         if(player.state == 2){
             player.dy = 1;
             player.state = 0;
-            //角色状态样子
-            player.skin = 5;
         }
     } else if(event->key() == Qt::Key_Space){
         //跳跃
         if(player.state == 1 || player.state == 2){
-            player.dy = -10;
+            player.dy = -5;
             player.state = 0;
-            //角色状态样子
-            player.skin = 5;
+            //判断角色样子
+            if(player.dx > 0){
+                player.skin = 6;
+            }else if(player.dx < 0){
+                player.skin = 5;
+            }
             //飞行
         }else if(player.state == 0){
             player.dy -= 1;
             player.state = 0;
-            //角色状态样子
-            player.skin = 5;
         }
     }
 }
@@ -231,11 +220,42 @@ void MainWindow::keyReleaseEvent(QKeyEvent *event)
     }
 }
 
+//判断角色脚下是否是平台
+bool MainWindow::isStandingOnPlatform(QGraphicsPixmapItem *playerItem, QGraphicsItem *platformItem) {
+    // 获取角色脚下区域的矩形，您可能需要根据角色的实际尺寸和位置调整这个区域
+    QRectF feetRect = playerItem->boundingRect().adjusted(0, playerItem->boundingRect().height() - 1, 0, 0);
+    feetRect.translate(playerItem->pos());
+
+    // 获取所有与角色脚下区域发生碰撞的项
+    QList<QGraphicsItem *> collidingItems = playerItem->scene()->items(feetRect, Qt::IntersectsItemBoundingRect);
+
+    // 检查碰撞列表中是否有平台项
+    foreach(QGraphicsItem *item, collidingItems) {
+        if (item == platformItem) {
+            return true; // 碰撞项中有平台，角色站在平台上
+        }
+    }
+
+    return false; // 没有碰撞项是平台，角色不在平台上
+
+}
+
+//角色自由下落
+void MainWindow::fall() {
+    if(isStandingOnPlatform(playerItem, platformItem) || isStandingOnPlatform(playerItem, platformItem2) || isStandingOnPlatform(playerItem, platformItem3)){
+        player.state = 2;
+        player.dy = 0;
+    } else{
+        player.state = 1;
+        player.fall();
+    }
+}
+
 //更新角色样子
 void MainWindow::updateSkin() {
     //加载图片
     //角色样子状态： 1,静止面朝左边 2,静止面朝右边 3,向左走动 4，向右走动
-    // 5，脚下悬空状态 6，朝左持武器角度 7，朝右持武器角度
+    // 5，面向左脚下悬空状态  6，面向右脚下悬空状态 7，朝左持武器角度 8，朝右持武器角度
     QPixmap pixmapPlayer(":/pictures/ArmsDealer_Default.png");
     if(player.skin == 1){
         //将角色图片替换
@@ -247,18 +267,31 @@ void MainWindow::updateSkin() {
         //由状态1镜像过来
         QPixmap cropPixmap = pixmapPlayer.copy(0, 8, 39, 45);
         playerItem->setPixmap(cropPixmap);
-        //创建一个翻转的变换
+        //水平反转
         QTransform transform;
         transform.scale(-1, 1);
-        //设置变换中心点为矩形中心
-        playerItem->setTransformOriginPoint(playerItem->boundingRect().width() / 2, playerItem->boundingRect().height() / 2);
-        //应用变换
+        transform.translate(-cropPixmap.width(), 0);
         playerItem->setTransform(transform);
     } else if(player.skin == 3){
 
     } else if(player.skin == 4){
 
     } else if(player.skin == 5){
-
+        //将角色图片替换
+        QPixmap cropPixmap = pixmapPlayer.copy(0, 64, 39, 45);
+        playerItem->setPixmap(cropPixmap);
+        //设置不应用变换
+        playerItem->setTransform(QTransform());
+    } else if(player.skin == 6){
+        //由状态5镜像过来
+        QPixmap cropPixmap = pixmapPlayer.copy(0, 64, 39, 45);
+        playerItem->setPixmap(cropPixmap);
+        //水平反转
+        QTransform transform;
+        transform.scale(-1, 1);
+        transform.translate(-cropPixmap.width(), 0);
+        playerItem->setTransform(transform);
+    } else if(player.skin == 7){
+    } else if(player.skin == 8){
     }
 }

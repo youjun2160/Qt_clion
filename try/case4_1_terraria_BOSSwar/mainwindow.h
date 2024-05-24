@@ -52,6 +52,11 @@ private:
     QGraphicsScene *Tscene;
     //创建角色
     QGraphicsPixmapItem *playerItem;
+    //创建平台
+    QGraphicsItem *platformItem;
+    QGraphicsItem *platformItem2;
+    QGraphicsItem *platformItem3;
+
 
 
 protected:
@@ -69,5 +74,9 @@ protected:
     void keyReleaseEvent(QKeyEvent *event) override;
     //更新角色样子
     void updateSkin();
+    //判断角色脚下是否是平台
+    bool isStandingOnPlatform(QGraphicsPixmapItem *playerItem, QGraphicsItem *platformItem);
+    //角色自由下落
+    void fall();
 };
 #endif // MAINWINDOW_H
