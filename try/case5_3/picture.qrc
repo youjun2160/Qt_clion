@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>picture/kunkun.png</file>
+        <file>picture/reciteWords.png</file>
+        <file>picture/reciteWrongWords.png</file>
+        <file>picture/Search.png</file>
+        <file>picture/Setting.png</file>
+    </qresource>
+</RCC>
