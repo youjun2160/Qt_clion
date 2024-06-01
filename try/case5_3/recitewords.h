@@ -7,6 +7,12 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
+#include <random>
+#include <vector>
+#include <QFile>
+#include <chrono>
+#include <algorithm>
+#include <QDebug>
 
 class ReciteWords : public PageBase
 {
@@ -38,15 +44,34 @@ public:
     void connectBtn(QStackedWidget *stackedWidget, MainMenu *mainMenu);
 
 
-    //创建7个文本，分别用来接收不同信息
+    //创建8个文本，分别用来接收不同信息
     QString chinese;
     QString yuanxing;
+    QString cixing;
     QString fushu;
     QString guoqu;
     QString guoqufenci;
     QString currentWord;
 
+
     QString userInput;
+
+    //按钮状态,当true时，从全部单词中随机抽取一个，当false时，检查用户输入是否正确
+    bool btnState = true;
+
+    //创建一个要背单词的容器
+    std::vector<QString> words;
+    //当前读取到第几个单词
+    int index = 0;
+    //是否已被打乱
+    bool shuffled = false;
+    //总单词数
+    int total;
+
+    //背单词
+    void reciteWord();
+    //判断单词是否在文件中存在
+    bool wordExistsInFile(const QString& word, const QString& filePath);
 };
 
 #endif // RECITEWORDS_H

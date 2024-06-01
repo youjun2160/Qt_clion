@@ -7,6 +7,12 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
+#include <random>
+#include <vector>
+#include <QFile>
+#include <chrono>
+#include <algorithm>
+#include <QDebug>
 
 class ReciteWrongWords : public PageBase
 {
@@ -47,6 +53,22 @@ public:
     QString currentWord;
 
     QString userInput;
+
+
+    //按钮状态,当true时，从全部单词中随机抽取一个，当false时，检查用户输入是否正确
+    bool btnState = true;
+
+    //创建一个要背单词的容器
+    std::vector<QString> words;
+    //当前读取到第几个单词
+    int index = 0;
+    //是否已被打乱
+    bool shuffled = false;
+    //总单词数
+    int total;
+
+    //背单词
+    void reciteWord();
 };
 
 #endif // RECITEWRONGWORDS_H

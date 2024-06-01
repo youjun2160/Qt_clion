@@ -7,6 +7,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //设置窗口固定大小
+    setFixedSize(800, 600);
+
     //创建一个堆栈窗口
     stackedWidget = new QStackedWidget(this);
 
@@ -35,6 +38,7 @@ MainWindow::MainWindow(QWidget *parent)
     reciteWrongWords->connectBtn(stackedWidget, mainMenu);
     search->connectBtn(stackedWidget, mainMenu);
     setting->connectBtn(stackedWidget, mainMenu);
+
 }
 
 MainWindow::~MainWindow()

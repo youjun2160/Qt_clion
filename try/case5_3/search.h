@@ -7,6 +7,8 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QLineEdit>
+#include <QFile>
+#include <QDebug>
 
 class Search : public PageBase
 {
@@ -36,12 +38,17 @@ public:
     //创建一个按钮
     QPushButton *searchBtn;
 
-    //创建5个文本，分别用来表示不同信息
+    //创建6个文本，分别用来表示不同信息
     QString chinese;
     QString yuanxing;
     QString fushu;
     QString guoqu;
     QString guoqufenci;
+
+    QString UserInput;
+
+    //执行搜索
+    void search();
 };
 
 #endif // SEARCH_H

@@ -17,12 +17,12 @@ MainMenu::MainMenu(QWidget *parrent) {
     btn_search = new QPushButton("搜索", this);
 
     //设置按钮
-    btn_reciteWords->setGeometry(130, 350, 200, 50);
-    btn_reciteWrongWords->setGeometry(130, 400, 200, 50);
-    btn_wordsSet->setGeometry(130, 450, 200, 50);
-    btn_Exit->setGeometry(130, 500, 200, 50);
-
+    btn_reciteWords->setGeometry(130, 300, 200, 50);
+    btn_reciteWrongWords->setGeometry(130, 350, 200, 50);
+    btn_wordsSet->setGeometry(130, 400, 200, 50);
     btn_search->setGeometry(500, 450, 200, 50);
+
+    btn_Exit->setGeometry(130, 500, 200, 50);
 
     //设置按钮字体样式
     btn_reciteWords->setFont(QFont("Microsoft FangSong", 17));
@@ -113,4 +113,6 @@ void MainMenu::connectBtn(QStackedWidget *stackedWidget, QWidget *reciteWords, Q
     connect(btn_reciteWrongWords, &QPushButton::clicked, stackedWidget, [=](){stackedWidget->setCurrentWidget(reciteWrongWords);});
     connect(btn_wordsSet, &QPushButton::clicked, stackedWidget, [=](){stackedWidget->setCurrentWidget(wordsSet);});
     connect(btn_search, &QPushButton::clicked, stackedWidget, [=](){stackedWidget->setCurrentWidget(search);});
+
+    connect(btn_Exit, &QPushButton::clicked, stackedWidget, [=](){exit(0);});
 }
